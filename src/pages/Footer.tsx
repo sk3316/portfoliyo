@@ -1,3 +1,4 @@
+"use client"
 const Footer = () => {
   return (
     <footer className="md:px-8 md:py-0 bg-slate-400">
