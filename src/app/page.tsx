@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <section className="p-4 gap-4">
+    <section className=" gap-4">
     <ModeToggle/>
     <Hero/>
     <Footer/>

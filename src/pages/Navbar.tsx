@@ -5,6 +5,9 @@ import { FiSun } from "react-icons/fi";
 import { FaMoon } from "react-icons/fa6";
 import { useTheme } from "next-themes";
 
+import Video from 'next-video';
+import getStarted from '/videos/get-started.mp4';
+
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -38,7 +41,8 @@ export function ModeToggle() {
   const { setTheme } = useTheme();
 
   return (
-    <main className="">
+    <main className="bg-gradient-to-r from-purple-500 to-pink-500">
+        {/* <Video src={getStarted} width={100} height={100}/>; */}
       <div>
         <NavigationMenu>
           <NavigationMenuList className="gap-4">

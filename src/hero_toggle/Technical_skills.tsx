@@ -32,7 +32,7 @@ const TechnicalSkills: React.FC = () => {
         <div key={index} className="skills-item bg-white p-4 mb-4 rounded-lg shadow-md">
           <h3 className="text-xl font-bold text-blue-600">{skill.category}</h3>
           <ul className="list-disc list-inside mt-2 text-gray-700">
-            {skill.skills.map((item, idx) => (
+            {skill.skills.map((item, idx) => ( 
               <li key={idx}>{item}</li>
             ))}
           </ul>

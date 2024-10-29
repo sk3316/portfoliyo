@@ -17,7 +17,7 @@ import ContactMe from "@/hero_toggle/Contact-me";
 
 const Hero = () => {
   return (
-    <main className="p-6">
+    <main className="p-6 ">
       <Tabs defaultValue="About me" >
         <TabsList className="bg-slate-400">
           <TabsTrigger value="About me" className="bg-red-400">About me</TabsTrigger>
