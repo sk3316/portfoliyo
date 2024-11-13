@@ -24,16 +24,29 @@ const Education: React.FC = () => {
   ];
 
   return (
-    <div className="education-section p-6 bg-white rounded-lg shadow-lg">
-      <h2 className="text-3xl font-semibold text-gray-800 mb-4">Education</h2>
-      {educationData.map((education, index) => (
-        <div key={index} className="education-item bg-gray-100 p-4 mb-4 rounded-lg shadow-md">
-          <h3 className="text-2xl font-bold text-blue-600">{education.degree}</h3>
-          <p className="text-xl text-gray-800">{education.institution}</p>
-          <p className="text-sm text-gray-500 mb-1">{education.date}</p>
-          <p className="text-sm text-gray-700">{education.grade}</p>
-        </div>
-      ))}
+    <div className="education-section p-6 bg-white rounded-lg shadow-lg flex flex-col md:flex-row items-start md:items-center gap-6">
+      
+      {/* Education Content Section */}
+      <div className="flex-1">
+        <h2 className="text-3xl font-semibold text-gray-800 mb-4">Education</h2>
+        {educationData.map((education, index) => (
+          <div key={index} className="education-item bg-gray-100 p-4 mb-4 rounded-lg shadow-md">
+            <h3 className="text-2xl font-bold text-blue-600">{education.degree}</h3>
+            <p className="text-xl text-gray-800">{education.institution}</p>
+            <p className="text-sm text-gray-500 mb-1">{education.date}</p>
+            <p className="text-sm text-gray-700">{education.grade}</p>
+          </div>
+        ))}
+      </div>
+
+      {/* Video Section */}
+      <video
+        className="w-full md:w-1/3 rounded-lg shadow-lg"
+        src="/education.mp4"  
+        loop
+        autoPlay
+        muted
+      />
     </div>
   );
 };
