@@ -5,7 +5,7 @@ const SocialLinks: React.FC = () => {
   const socialData = [
     {
       platform: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/yourprofile',
+      url: 'https://www.linkedin.com/in/shitanshu-priyadarshi-6b3902227/',
     },
     {
       platform: 'GitHub',
@@ -13,11 +13,11 @@ const SocialLinks: React.FC = () => {
     },
     {
       platform: 'LeetCode',
-      url: 'https://leetcode.com/yourprofile',
+      url: 'https://leetcode.com/u/SHITU26/',
     },
     {
       platform: 'HackerRank',
-      url: 'https://www.hackerrank.com/yourprofile',
+      url: 'https://www.hackerrank.com/profile/RA2111033010107',
     },
   ];
 
