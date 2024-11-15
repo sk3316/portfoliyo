@@ -24,7 +24,7 @@ const Education: React.FC = () => {
   ];
 
   return (
-    <div className="education-section p-6 bg-white rounded-lg shadow-lg flex flex-col md:flex-row items-start md:items-center gap-6">
+    <div className="education-section p-6 bg-white rounded-2xl shadow-2xl flex flex-col md:flex-row items-start md:items-center gap-6">
       
       {/* Education Content Section */}
       <div className="flex-1">

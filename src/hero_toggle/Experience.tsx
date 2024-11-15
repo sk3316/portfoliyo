@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from 'react';
 
 const Experience: React.FC = () => {
@@ -42,6 +42,14 @@ const Experience: React.FC = () => {
           {experience.reference && <p className="mt-2 text-sm text-gray-500">Reference: {experience.reference}</p>}
         </div>
       ))}
+
+      {/* Video Section */}
+      <div className="flex justify-center mt-6">
+        <video className="rounded-lg shadow-md" loop autoPlay muted width="400">
+          <source src="/experience.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </div>
   );
 };

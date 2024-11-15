@@ -17,19 +17,19 @@ import ContactMe from "@/hero_toggle/Contact-me";
 
 const Hero = () => {
   return (
-    <main className="p-6 ">
+    <main className="p-6">
       <Tabs defaultValue="About me" >
-        <TabsList className="bg-slate-400">
-          <TabsTrigger value="About me" className="bg-red-400">About me</TabsTrigger>
-          <TabsTrigger value="Education" className="bg-red-400">Education</TabsTrigger>
-          <TabsTrigger value="Experience" className="bg-red-400">Experience</TabsTrigger>
-          <TabsTrigger value="Technical Skills" className="bg-red-400">Technical Skills</TabsTrigger>
-          <TabsTrigger value="Projects" className="bg-red-400">Projects</TabsTrigger>
-          <TabsTrigger value="Certifications" className="bg-red-400">Certifications</TabsTrigger>
-          <TabsTrigger value="Hobbies" className="bg-red-400">Hobbies</TabsTrigger>
-          <TabsTrigger value="Co-curricular" className="bg-red-400">Co-curricular</TabsTrigger>
-          <TabsTrigger value="Socials" className="bg-red-400">Socials</TabsTrigger>
-          <TabsTrigger value="Contact-me" className="bg-red-400">Contact-me</TabsTrigger>
+        <TabsList className="bg-slate-400 rounded-2xl shadow-2xl gap-1">
+          <TabsTrigger value="About me" className="bg-red-400 rounded-2xl shadow-2xl">About me</TabsTrigger>
+          <TabsTrigger value="Education" className="bg-red-400 rounded-2xl shadow-2xl">Education</TabsTrigger>
+          <TabsTrigger value="Experience" className="bg-red-400 rounded-2xl shadow-2xl">Experience</TabsTrigger>
+          <TabsTrigger value="Technical Skills" className="bg-red-400 rounded-2xl shadow-2xl">Technical Skills</TabsTrigger>
+          <TabsTrigger value="Projects" className="bg-red-400 rounded-2xl shadow-2xl">Projects</TabsTrigger>
+          <TabsTrigger value="Certifications" className="bg-red-400 rounded-2xl shadow-2xl">Certifications</TabsTrigger>
+          <TabsTrigger value="Hobbies" className="bg-red-400 rounded-2xl shadow-2xl">Hobbies</TabsTrigger>
+          <TabsTrigger value="Co-curricular" className="bg-red-400 rounded-2xl shadow-2xl">Co-curricular</TabsTrigger>
+          <TabsTrigger value="Socials" className="bg-red-400 rounded-2xl shadow-2xl">Socials</TabsTrigger>
+          <TabsTrigger value="Contact-me" className="bg-red-400 rounded-2xl shadow-2xl">Contact-me</TabsTrigger>
         </TabsList>
         <TabsContent value="About me">
           <Introduction/>

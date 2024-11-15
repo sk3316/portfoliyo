@@ -3,7 +3,7 @@ import React from 'react';
 // import intro from '../assets/videos/intro.mp4'
 const Introduction: React.FC = () => {
   return (
-    <div className="introduction-section p-6 bg-gray-100 rounded-lg shadow-lg flex flex-col md:flex-row items-center gap-6">
+    <div className="introduction-section p-6 bg-gray-100 flex flex-col md:flex-row items-center gap-6 rounded-2xl shadow-2xl">
       
       {/* Video Section */}
       <video
