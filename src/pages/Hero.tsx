@@ -2,8 +2,9 @@
 import Image from "next/image";
 import React from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import ModeToggle from "./Navbar";
-// import Home from "@/hero_toggle/Home";
+// Import your tabs content components
 import Education from "@/hero_toggle/Education";
 import Experience from "@/hero_toggle/Experience";
 import TechnicalSkills from "@/hero_toggle/Technical_skills";
@@ -18,48 +19,74 @@ import ContactMe from "@/hero_toggle/Contact-me";
 const Hero = () => {
   return (
     <main className="p-6">
-      <Tabs defaultValue="About me" >
-        <TabsList className="bg-slate-400 rounded-2xl shadow-2xl gap-1">
-          <TabsTrigger value="About me" className="bg-red-400 rounded-2xl shadow-2xl">About me</TabsTrigger>
-          <TabsTrigger value="Education" className="bg-red-400 rounded-2xl shadow-2xl">Education</TabsTrigger>
-          <TabsTrigger value="Experience" className="bg-red-400 rounded-2xl shadow-2xl">Experience</TabsTrigger>
-          <TabsTrigger value="Technical Skills" className="bg-red-400 rounded-2xl shadow-2xl">Technical Skills</TabsTrigger>
-          <TabsTrigger value="Projects" className="bg-red-400 rounded-2xl shadow-2xl">Projects</TabsTrigger>
-          <TabsTrigger value="Certifications" className="bg-red-400 rounded-2xl shadow-2xl">Certifications</TabsTrigger>
-          <TabsTrigger value="Hobbies" className="bg-red-400 rounded-2xl shadow-2xl">Hobbies</TabsTrigger>
-          <TabsTrigger value="Co-curricular" className="bg-red-400 rounded-2xl shadow-2xl">Co-curricular</TabsTrigger>
-          <TabsTrigger value="Socials" className="bg-red-400 rounded-2xl shadow-2xl">Socials</TabsTrigger>
-          <TabsTrigger value="Contact-me" className="bg-red-400 rounded-2xl shadow-2xl">Contact-me</TabsTrigger>
-        </TabsList>
+      <Tabs defaultValue="About me">
+        {/* Scrollable Tabs List */}
+        <ScrollArea className="w-full overflow-hidden rounded-2xl bg-slate-400 shadow-2xl">
+          <TabsList className="flex gap-2 p-2 w-max min-w-full">
+            <TabsTrigger value="About me" className="bg-red-400 rounded-2xl shadow-2xl px-4 py-2">
+              About me
+            </TabsTrigger>
+            <TabsTrigger value="Education" className="bg-red-400 rounded-2xl shadow-2xl px-4 py-2">
+              Education
+            </TabsTrigger>
+            <TabsTrigger value="Experience" className="bg-red-400 rounded-2xl shadow-2xl px-4 py-2">
+              Experience
+            </TabsTrigger>
+            <TabsTrigger value="Technical Skills" className="bg-red-400 rounded-2xl shadow-2xl px-4 py-2">
+              Technical Skills
+            </TabsTrigger>
+            <TabsTrigger value="Projects" className="bg-red-400 rounded-2xl shadow-2xl px-4 py-2">
+              Projects
+            </TabsTrigger>
+            <TabsTrigger value="Certifications" className="bg-red-400 rounded-2xl shadow-2xl px-4 py-2">
+              Certifications
+            </TabsTrigger>
+            <TabsTrigger value="Hobbies" className="bg-red-400 rounded-2xl shadow-2xl px-4 py-2">
+              Hobbies
+            </TabsTrigger>
+            <TabsTrigger value="Co-curricular" className="bg-red-400 rounded-2xl shadow-2xl px-4 py-2">
+              Co-curricular
+            </TabsTrigger>
+            <TabsTrigger value="Socials" className="bg-red-400 rounded-2xl shadow-2xl px-4 py-2">
+              Socials
+            </TabsTrigger>
+            <TabsTrigger value="Contact-me" className="bg-red-400 rounded-2xl shadow-2xl px-4 py-2">
+              Contact-me
+            </TabsTrigger>
+          </TabsList>
+          <ScrollBar orientation="horizontal" />
+        </ScrollArea>
+
+        {/* Content Sections */}
         <TabsContent value="About me">
-          <Introduction/>
+          <Introduction />
         </TabsContent>
         <TabsContent value="Education">
-          <Education/>
+          <Education />
         </TabsContent>
         <TabsContent value="Experience">
-          <Experience/>
+          <Experience />
         </TabsContent>
         <TabsContent value="Technical Skills">
-          <TechnicalSkills/>
+          <TechnicalSkills />
         </TabsContent>
         <TabsContent value="Projects">
-          <Projects/>
+          <Projects />
         </TabsContent>
         <TabsContent value="Certifications">
-          <Certifications/>
+          <Certifications />
         </TabsContent>
         <TabsContent value="Hobbies">
-          <Hobbies/>
+          <Hobbies />
         </TabsContent>
         <TabsContent value="Co-curricular">
-          <CoCurricularActivities/>
+          <CoCurricularActivities />
         </TabsContent>
         <TabsContent value="Socials">
-          <SocialLinks/>
+          <SocialLinks />
         </TabsContent>
         <TabsContent value="Contact-me">
-          <ContactMe/>
+          <ContactMe />
         </TabsContent>
       </Tabs>
     </main>
